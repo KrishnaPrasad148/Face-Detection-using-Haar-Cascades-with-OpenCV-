@@ -56,7 +56,7 @@ iv) Perform face detection with label in real-time video from webcam.
 
 ## Program:
 
-### I)
+### I) Load and Display Images
 ```py
 
 import cv2
@@ -81,14 +81,14 @@ plt.subplot(133); plt.title("Image 3"); plt.imshow(cv2.resize(img3_gray, (1000, 
 
 ```
 
-### II)
+### II) Load Haar Cascade Classifiers
 ```py
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 ```
 
-### III)
+### III) Perform Face Detection in Images
 ```py
 
 def detect_face(img):
@@ -113,7 +113,7 @@ plt.title("IMAGE 3")
 
 ```
 
-### IV)
+### IV) Perform Eye Detection in Images
 ```py
 
 eye_cascade = cv2.CascadeClassifier("haarcascade_eye.xml")
@@ -137,7 +137,7 @@ plt.title("IMAGE 2")
 
 ```
 
-### V)
+### V) Perform Face Detection on Real-Time Webcam Video
 ```py
 
 cap = cv2.VideoCapture(0)
